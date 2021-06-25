@@ -13,9 +13,7 @@ export class AccountService{
       status: 'unknown'
     }
   ];
-  getAccounts(){
-      return this.accounts;
-  }
+  
   addAccount(newAccount:{name:string,status:string}){
        this.accounts.push(newAccount);
   }

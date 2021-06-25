@@ -12,16 +12,16 @@ export class AppComponent implements OnInit {
    accounts:{name:string,status:string}[] = [];
 constructor(private accountService:AccountService){}
 ngOnInit(){
-  this.accounts = this.accountService.getAccounts();
+  this.accounts = this.accountService.accounts;
 }
-  onAccountAdded(newAccount: {name: string, status: string}) {
-    this.accountService.addAccount(newAccount);
-    //this.accounts.push(newAccount);
-  }
+  // onAccountAdded(newAccount: {name: string, status: string}) {
+  //   this.accountService.addAccount(newAccount);
+  //   //this.accounts.push(newAccount);
+  // }
 
-  onStatusChanged(updateInfo: {id: number, newStatus: string}) {
-    //this.accounts[updateInfo.id].status = updateInfo.newStatus;
-    this.accountService.updateStatus(updateInfo.id,updateInfo.newStatus);
-  }
+  // onStatusChanged(updateInfo: {id: number, newStatus: string}) {
+  //   //this.accounts[updateInfo.id].status = updateInfo.newStatus;
+  //   this.accountService.updateStatus(updateInfo.id,updateInfo.newStatus);
+  // }
 }
 
