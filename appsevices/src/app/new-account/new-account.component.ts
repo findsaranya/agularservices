@@ -21,7 +21,7 @@ export class NewAccountComponent implements OnInit {
       status: accountStatus
     });
     this.loggingService.logStatusChange(accountStatus);
-    console.log('A server status changed, new status: ' + accountStatus);
+    //console.log('A server status changed, new status: ' + accountStatus);
   }
 
 
